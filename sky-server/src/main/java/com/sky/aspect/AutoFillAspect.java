@@ -26,7 +26,6 @@ public class AutoFillAspect {
      * 切入点 ：所有被@AutoFill注解的方法
      */
     @Pointcut("execution(* com.sky.mapper.*.*(..)) && @annotation(com.sky.annotation.AutoFill)") //mapper包下，加入了AutoFill注解的方法
-
     public void auroFillPointCut() {}
 
     /**
